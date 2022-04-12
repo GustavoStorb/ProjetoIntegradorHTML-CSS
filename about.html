@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Projeto Integrador - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header>
+        <div class="topnav" id="myTopnav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <nav>
+            <h1 class="nav-title co2-white fadeIn">Projeto Integrador</h1>
+            <div class="nav-items">
+              <a class="" href="./">Home</a>
+              <a class="" href="about.html">About</a>
+              <a class="" href="contact.html">Contact</a>
+              <a href="login.html" class="active">Login</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1 class="title co2-white fadeIn">Sobre o projeto</h1>
+          <hr class="fadeIn" />
+          <p class="subtitle co2-white fadeIn">
+            Tendo em vista a necessidade de medidas efetivas para redução do
+            impacto ambiental, a nossa empresa necessita medir a "pegada de
+            carbono" relativa à emissão de CO2 da sua frota de veículos
+            utilizados por seus colaboradores. Para isso, foi desenvolvido um
+            sistema para o cálculo dessa pegada de carbono através dos chamados
+            dos nossos funcionários.
+          </p>
+        </div>
+        <div>
+          <img class="fadeIn" src="about.png" />
+        </div>
+      </section>
+    </div>
+    <script>
+      function myFunction() {
+        var navBarEl = document.getElementById("myTopnav");
+        navBarEl.classList.toggle("responsive");
+      }
+    </script>
+  </body>
+</html>

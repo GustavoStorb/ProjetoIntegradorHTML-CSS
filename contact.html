@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Projeto Integrador - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header>
+        <div class="topnav" id="myTopnav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <nav>
+            <h1 class="nav-title co2-white fadeIn">Projeto Integrador</h1>
+            <div class="nav-items">
+              <a class="" href="./">Home</a>
+              <a class="" href="about.html">About</a>
+              <a class="" href="contact.html">Contact</a>
+              <a href="login.html" class="active">Login</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="login-wrapper fadeIn">
+          <h2 class="co2-white" id="titulocontact">Contact us</h2>
+          <form class="name-form">
+            <label for="Name" class="co2-white">Name</label>
+            <input
+              type="text"
+              id="Name"
+              name="Name"
+              class="name-input"
+              required
+            />
+          </form>
+          <form class="email-form">
+            <label for="Email" class="co2-white">Email</label>
+            <input
+              type="text"
+              id="Email"
+              name="Email"
+              class="name-input"
+              required
+            />
+          </form>
+          <form class="message-form">
+            <label for="Message" class="co2-white">Message</label>
+            <div class="container">
+              <div class="comment">
+                <textarea
+                  type="text"
+                  id="Email"
+                  name="Email"
+                  class="textinput"
+                  placeholder=""
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </form>
+          <div>
+            <br /><br /><br /><br />
+            <form class="login-form" onsubmit="submitForm()">
+              <button type="submit">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      function myFunction() {
+        var navBarEl = document.getElementById("myTopnav");
+        navBarEl.classList.toggle("responsive");
+      }
+    </script>
+  </body>
+</html>
